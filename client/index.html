@@ -30,59 +30,68 @@
         </div>
     </nav>
 
-    <main class="container my-5">
-        <div class="hero-section text-center mb-5">
-            <h1 class="display-4 mb-4">Professional Tools Suite</h1>
+    <main class="container">
+        <div class="hero-section text-center">
+            <div class="badge-container mb-4">
+                <span class="badge bg-light text-dark border px-3 py-2 rounded-pill">
+                    <i class="fas fa-sparkles me-2"></i>
+                    Free Professional Tools
+                    <i class="fas fa-arrow-right ms-2"></i>
+                </span>
+            </div>
+            <h1 class="mb-4">Professional Tools Suite</h1>
             <p class="lead">Convert documents and analyze text with our powerful online tools</p>
         </div>
 
-        <div class="row g-4">
-            <!-- PDF to DOCX Tool -->
-            <div class="col-lg-4 col-md-6">
-                <div class="tool-card h-100">
-                    <div class="tool-icon">
-                        <i class="fas fa-file-pdf"></i>
-                        <i class="fas fa-arrow-right mx-2"></i>
-                        <i class="fas fa-file-word"></i>
+        <div class="tools-grid">
+            <div class="row g-4 justify-content-center">
+                <!-- PDF to DOCX Tool -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tool-card h-100">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-pdf"></i>
+                            <i class="fas fa-arrow-right mx-2 opacity-50"></i>
+                            <i class="fas fa-file-word"></i>
+                        </div>
+                        <h3>PDF to DOCX</h3>
+                        <p>Convert PDF documents to editable Word documents with ease. Maintain formatting and structure for seamless editing.</p>
+                        <a href="/tools/pdf-to-docx" class="btn btn-primary">
+                            <i class="fas fa-upload me-2"></i>
+                            Convert PDF
+                        </a>
                     </div>
-                    <h3>PDF to DOCX</h3>
-                    <p>Convert PDF documents to editable Word documents with ease. Maintain formatting and structure.</p>
-                    <a href="/tools/pdf-to-docx" class="btn btn-primary">
-                        <i class="fas fa-upload me-2"></i>
-                        Convert PDF
-                    </a>
                 </div>
-            </div>
 
-            <!-- DOCX to PDF Tool -->
-            <div class="col-lg-4 col-md-6">
-                <div class="tool-card h-100">
-                    <div class="tool-icon">
-                        <i class="fas fa-file-word"></i>
-                        <i class="fas fa-arrow-right mx-2"></i>
-                        <i class="fas fa-file-pdf"></i>
+                <!-- DOCX to PDF Tool -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tool-card h-100">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-word"></i>
+                            <i class="fas fa-arrow-right mx-2 opacity-50"></i>
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>DOCX to PDF</h3>
+                        <p>Convert Word documents to PDF format for sharing and printing. Preserve layout, fonts, and professional appearance.</p>
+                        <a href="/tools/docx-to-pdf" class="btn btn-primary">
+                            <i class="fas fa-upload me-2"></i>
+                            Convert DOCX
+                        </a>
                     </div>
-                    <h3>DOCX to PDF</h3>
-                    <p>Convert Word documents to PDF format for sharing and printing. Preserve layout and fonts.</p>
-                    <a href="/tools/docx-to-pdf" class="btn btn-primary">
-                        <i class="fas fa-upload me-2"></i>
-                        Convert DOCX
-                    </a>
                 </div>
-            </div>
 
-            <!-- Word Counter Tool -->
-            <div class="col-lg-4 col-md-6">
-                <div class="tool-card h-100">
-                    <div class="tool-icon">
-                        <i class="fas fa-calculator"></i>
+                <!-- Word Counter Tool -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tool-card h-100">
+                        <div class="tool-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3>Word Counter</h3>
+                        <p>Analyze your text with detailed statistics including word count, character count, reading time, and word frequency analysis.</p>
+                        <a href="/tools/word-counter" class="btn btn-primary">
+                            <i class="fas fa-edit me-2"></i>
+                            Count Words
+                        </a>
                     </div>
-                    <h3>Word Counter</h3>
-                    <p>Analyze your text with detailed statistics including word count, character count, and reading time.</p>
-                    <a href="/tools/word-counter" class="btn btn-primary">
-                        <i class="fas fa-edit me-2"></i>
-                        Count Words
-                    </a>
                 </div>
             </div>
         </div>
