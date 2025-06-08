@@ -303,6 +303,61 @@ body {
     }
 }
 
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Staggered animations for tool cards */
+.tool-card:nth-child(1) {
+    animation: slideInLeft 0.6s ease-out 0.1s both;
+}
+
+.tool-card:nth-child(2) {
+    animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+.tool-card:nth-child(3) {
+    animation: slideInRight 0.6s ease-out 0.3s both;
+}
+
+.feature-item {
+    animation: scaleIn 0.5s ease-out both;
+}
+
+.feature-item:nth-child(1) { animation-delay: 0.1s; }
+.feature-item:nth-child(2) { animation-delay: 0.2s; }
+.feature-item:nth-child(3) { animation-delay: 0.3s; }
+.feature-item:nth-child(4) { animation-delay: 0.4s; }
+
 .tools-grid {
     margin: var(--spacing-xl) 0;
 }
@@ -332,39 +387,53 @@ body {
 .features-section h2 {
     color: var(--primary-black);
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: var(--spacing-lg);
+    position: relative;
+    z-index: 10;
 }
 
 .feature-item {
-    padding: 1.5rem;
-    background-color: var(--primary-white);
+    padding: var(--spacing-md);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
     border: 1px solid var(--border-color);
-    border-radius: 8px;
-    transition: all 0.3s ease;
+    border-radius: var(--radius);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     height: 100%;
+    position: relative;
+    z-index: 10;
 }
 
 .feature-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px var(--shadow-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px var(--hover-shadow);
+    border-color: var(--primary-black);
+    background-color: var(--primary-white);
 }
 
 .feature-item i {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--primary-black);
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-sm);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover i {
+    transform: scale(1.1);
 }
 
 .feature-item h5 {
     color: var(--primary-black);
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.1rem;
 }
 
 .feature-item p {
-    color: var(--medium-gray);
+    color: var(--text-muted);
     font-size: 0.9rem;
     margin: 0;
+    line-height: 1.5;
 }
 
 /* Tool Page Styles */
