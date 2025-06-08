@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools Website - PDF Converters & Word Counter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="dotted-background"></div>
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-tools me-2"></i>
+                Tools Website
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="hero-section text-center mb-5">
+            <h1 class="display-4 mb-4">Professional Tools Suite</h1>
+            <p class="lead">Convert documents and analyze text with our powerful online tools</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- PDF to DOCX Tool -->
+            <div class="col-lg-4 col-md-6">
+                <div class="tool-card h-100">
+                    <div class="tool-icon">
+                        <i class="fas fa-file-pdf"></i>
+                        <i class="fas fa-arrow-right mx-2"></i>
+                        <i class="fas fa-file-word"></i>
+                    </div>
+                    <h3>PDF to DOCX</h3>
+                    <p>Convert PDF documents to editable Word documents with ease. Maintain formatting and structure.</p>
+                    <a href="/tools/pdf-to-docx" class="btn btn-primary">
+                        <i class="fas fa-upload me-2"></i>
+                        Convert PDF
+                    </a>
+                </div>
+            </div>
+
+            <!-- DOCX to PDF Tool -->
+            <div class="col-lg-4 col-md-6">
+                <div class="tool-card h-100">
+                    <div class="tool-icon">
+                        <i class="fas fa-file-word"></i>
+                        <i class="fas fa-arrow-right mx-2"></i>
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3>DOCX to PDF</h3>
+                    <p>Convert Word documents to PDF format for sharing and printing. Preserve layout and fonts.</p>
+                    <a href="/tools/docx-to-pdf" class="btn btn-primary">
+                        <i class="fas fa-upload me-2"></i>
+                        Convert DOCX
+                    </a>
+                </div>
+            </div>
+
+            <!-- Word Counter Tool -->
+            <div class="col-lg-4 col-md-6">
+                <div class="tool-card h-100">
+                    <div class="tool-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Word Counter</h3>
+                    <p>Analyze your text with detailed statistics including word count, character count, and reading time.</p>
+                    <a href="/tools/word-counter" class="btn btn-primary">
+                        <i class="fas fa-edit me-2"></i>
+                        Count Words
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="features-section mt-5">
+            <h2 class="text-center mb-4">Why Choose Our Tools?</h2>
+            <div class="row g-4">
+                <div class="col-md-3 text-center">
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h5>Secure</h5>
+                        <p>Your files are processed securely and deleted after conversion</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="feature-item">
+                        <i class="fas fa-bolt"></i>
+                        <h5>Fast</h5>
+                        <p>Quick processing with optimized conversion algorithms</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="feature-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h5>Responsive</h5>
+                        <p>Works perfectly on all devices and screen sizes</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="feature-item">
+                        <i class="fas fa-free-code-camp"></i>
+                        <h5>Free</h5>
+                        <p>All tools are completely free to use with no limitations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-5 py-4 text-center">
+        <div class="container">
+            <p>&copy; 2024 Tools Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
