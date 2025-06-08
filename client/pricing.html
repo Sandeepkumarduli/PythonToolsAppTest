@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - StudentKitPro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="dotted-background"></div>
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-graduation-cap me-2"></i>
+                StudentKitPro
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <div class="pricing-hero text-center">
+            <div class="badge-container mb-4">
+                <span class="badge bg-light text-dark border px-3 py-2 rounded-pill">
+                    <i class="fas fa-lightning-bolt me-2"></i>
+                    Simple & Transparent Pricing
+                </span>
+            </div>
+            <h1 class="mb-4">Choose Your Plan</h1>
+            <p class="lead">Start free and upgrade as you grow. No hidden fees, cancel anytime.</p>
+            
+            <!-- Billing Toggle -->
+            <div class="billing-toggle mx-auto mb-5">
+                <div class="toggle-container">
+                    <button class="toggle-btn active" data-billing="monthly">Monthly</button>
+                    <button class="toggle-btn" data-billing="yearly">
+                        Yearly
+                        <span class="discount-badge">Save 25%</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="pricing-grid">
+            <div class="row g-4 justify-content-center">
+                <!-- Free Plan -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Free</h3>
+                            <div class="price-display">
+                                <span class="price monthly-price">$0</span>
+                                <span class="price yearly-price" style="display: none;">$0</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <p class="plan-description">Perfect for getting started</p>
+                        </div>
+                        
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> 3 PDF conversions per day</li>
+                                <li><i class="fas fa-check"></i> Basic word counter</li>
+                                <li><i class="fas fa-check"></i> Standard processing speed</li>
+                                <li><i class="fas fa-check"></i> Email support</li>
+                                <li><i class="fas fa-times opacity-50"></i> Priority support</li>
+                                <li><i class="fas fa-times opacity-50"></i> Batch processing</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="pricing-footer">
+                            <button class="btn btn-secondary w-100">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">🔥 Most Popular</div>
+                        
+                        <div class="pricing-header">
+                            <h3>Pro</h3>
+                            <div class="price-display">
+                                <span class="price monthly-price">$9</span>
+                                <span class="price yearly-price" style="display: none;">$81</span>
+                                <span class="period monthly-period">/month</span>
+                                <span class="period yearly-period" style="display: none;">/year</span>
+                            </div>
+                            <p class="plan-description">Great for students and professionals</p>
+                        </div>
+                        
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Unlimited PDF conversions</li>
+                                <li><i class="fas fa-check"></i> Advanced word analytics</li>
+                                <li><i class="fas fa-check"></i> Fast processing speed</li>
+                                <li><i class="fas fa-check"></i> Priority email support</li>
+                                <li><i class="fas fa-check"></i> Batch processing (up to 10 files)</li>
+                                <li><i class="fas fa-check"></i> Cloud storage integration</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="pricing-footer">
+                            <button class="btn btn-primary w-100">Start Pro Trial</button>
+                            <small class="text-muted">14-day free trial</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card enterprise">
+                        <div class="pricing-header">
+                            <h3>Enterprise</h3>
+                            <div class="price-display">
+                                <span class="price">Custom</span>
+                            </div>
+                            <p class="plan-description">For teams and institutions</p>
+                        </div>
+                        
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Everything in Pro</li>
+                                <li><i class="fas fa-check"></i> Unlimited team members</li>
+                                <li><i class="fas fa-check"></i> Advanced admin controls</li>
+                                <li><i class="fas fa-check"></i> 24/7 phone support</li>
+                                <li><i class="fas fa-check"></i> Custom integrations</li>
+                                <li><i class="fas fa-check"></i> SLA guarantee</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="pricing-footer">
+                            <button class="btn btn-primary w-100">Contact Sales</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h5>Can I change my plan anytime?</h5>
+                            <p>Yes, you can upgrade, downgrade, or cancel your subscription at any time. Changes take effect immediately.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h5>Is there a free trial?</h5>
+                            <p>Yes! Pro plan comes with a 14-day free trial. No credit card required to start.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h5>What payment methods do you accept?</h5>
+                            <p>We accept all major credit cards, PayPal, and bank transfers for Enterprise plans.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h5>Is my data secure?</h5>
+                            <p>Absolutely. All files are processed securely and automatically deleted after conversion. We never store your documents.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Home -->
+        <div class="text-center mt-5 mb-5">
+            <a href="/" class="btn btn-secondary">
+                <i class="fas fa-home me-2"></i>
+                Back to Home
+            </a>
+        </div>
+    </main>
+
+    <footer class="mt-5 py-4 text-center">
+        <div class="container">
+            <p>&copy; 2024 StudentKitPro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleBtns = document.querySelectorAll('.toggle-btn');
+            const monthlyPrices = document.querySelectorAll('.monthly-price');
+            const yearlyPrices = document.querySelectorAll('.yearly-price');
+            const monthlyPeriods = document.querySelectorAll('.monthly-period');
+            const yearlyPeriods = document.querySelectorAll('.yearly-period');
+
+            toggleBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const billing = btn.dataset.billing;
+                    
+                    // Update active state
+                    toggleBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    // Show/hide prices
+                    if (billing === 'yearly') {
+                        monthlyPrices.forEach(p => p.style.display = 'none');
+                        yearlyPrices.forEach(p => p.style.display = 'inline');
+                        monthlyPeriods.forEach(p => p.style.display = 'none');
+                        yearlyPeriods.forEach(p => p.style.display = 'inline');
+                    } else {
+                        monthlyPrices.forEach(p => p.style.display = 'inline');
+                        yearlyPrices.forEach(p => p.style.display = 'none');
+                        monthlyPeriods.forEach(p => p.style.display = 'inline');
+                        yearlyPeriods.forEach(p => p.style.display = 'none');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

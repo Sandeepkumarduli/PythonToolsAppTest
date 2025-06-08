@@ -14,8 +14,8 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <i class="fas fa-tools me-2"></i>
-                Tools Website
+                <i class="fas fa-graduation-cap me-2"></i>
+                StudentKitPro
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -24,6 +24,12 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
                     </li>
                 </ul>
             </div>
@@ -39,58 +45,135 @@
                     <i class="fas fa-arrow-right ms-2"></i>
                 </span>
             </div>
-            <h1 class="mb-4">Professional Tools Suite</h1>
-            <p class="lead">Convert documents and analyze text with our powerful online tools</p>
+            <h1 class="mb-4">Student Productivity Tools</h1>
+            <p class="lead">Essential tools for students to excel in academics and productivity</p>
         </div>
 
         <div class="tools-grid">
             <div class="row g-4 justify-content-center">
                 <!-- PDF to DOCX Tool -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="tool-card h-100">
-                        <div class="tool-icon">
-                            <i class="fas fa-file-pdf"></i>
-                            <i class="fas fa-arrow-right mx-2 opacity-50"></i>
-                            <i class="fas fa-file-word"></i>
+                    <div class="tool-card">
+                        <div class="tool-status">Available</div>
+                        
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
                         </div>
-                        <h3>PDF to DOCX</h3>
+                        
+                        <div>
+                            <h3>PDF to DOCX</h3>
+                            <p class="tool-category">Document Converter</p>
+                        </div>
+                        
                         <p>Convert PDF documents to editable Word documents with ease. Maintain formatting and structure for seamless editing.</p>
-                        <a href="/tools/pdf-to-docx" class="btn btn-primary">
-                            <i class="fas fa-upload me-2"></i>
-                            Convert PDF
-                        </a>
+                        
+                        <div class="tool-stats">
+                            <div class="tool-stat">
+                                <i class="fas fa-star text-warning"></i>
+                                <span>4.9 Rating</span>
+                            </div>
+                            <div class="tool-stat">
+                                <i class="fas fa-users"></i>
+                                <span>2.1k Users</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-actions">
+                            <a href="/tools/pdf-to-docx" class="btn btn-primary">
+                                <i class="fas fa-upload me-2"></i>
+                                Convert PDF
+                            </a>
+                            <button class="btn btn-secondary">
+                                <i class="fas fa-bookmark me-2"></i>
+                                Save Tool
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <!-- DOCX to PDF Tool -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="tool-card h-100">
-                        <div class="tool-icon">
-                            <i class="fas fa-file-word"></i>
-                            <i class="fas fa-arrow-right mx-2 opacity-50"></i>
-                            <i class="fas fa-file-pdf"></i>
+                    <div class="tool-card">
+                        <div class="tool-status">Available</div>
+                        
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-file-word"></i>
+                            </div>
                         </div>
-                        <h3>DOCX to PDF</h3>
+                        
+                        <div>
+                            <h3>DOCX to PDF</h3>
+                            <p class="tool-category">Document Converter</p>
+                        </div>
+                        
                         <p>Convert Word documents to PDF format for sharing and printing. Preserve layout, fonts, and professional appearance.</p>
-                        <a href="/tools/docx-to-pdf" class="btn btn-primary">
-                            <i class="fas fa-upload me-2"></i>
-                            Convert DOCX
-                        </a>
+                        
+                        <div class="tool-stats">
+                            <div class="tool-stat">
+                                <i class="fas fa-star text-warning"></i>
+                                <span>4.8 Rating</span>
+                            </div>
+                            <div class="tool-stat">
+                                <i class="fas fa-users"></i>
+                                <span>1.8k Users</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-actions">
+                            <a href="/tools/docx-to-pdf" class="btn btn-primary">
+                                <i class="fas fa-upload me-2"></i>
+                                Convert DOCX
+                            </a>
+                            <button class="btn btn-secondary">
+                                <i class="fas fa-bookmark me-2"></i>
+                                Save Tool
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Word Counter Tool -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="tool-card h-100">
-                        <div class="tool-icon">
-                            <i class="fas fa-calculator"></i>
+                    <div class="tool-card">
+                        <div class="tool-status">Available</div>
+                        
+                        <div class="tool-header">
+                            <div class="tool-icon">
+                                <i class="fas fa-calculator"></i>
+                            </div>
                         </div>
-                        <h3>Word Counter</h3>
+                        
+                        <div>
+                            <h3>Word Counter</h3>
+                            <p class="tool-category">Text Analysis</p>
+                        </div>
+                        
                         <p>Analyze your text with detailed statistics including word count, character count, reading time, and word frequency analysis.</p>
-                        <a href="/tools/word-counter" class="btn btn-primary">
-                            <i class="fas fa-edit me-2"></i>
-                            Count Words
-                        </a>
+                        
+                        <div class="tool-stats">
+                            <div class="tool-stat">
+                                <i class="fas fa-star text-warning"></i>
+                                <span>4.9 Rating</span>
+                            </div>
+                            <div class="tool-stat">
+                                <i class="fas fa-users"></i>
+                                <span>3.2k Users</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-actions">
+                            <a href="/tools/word-counter" class="btn btn-primary">
+                                <i class="fas fa-edit me-2"></i>
+                                Count Words
+                            </a>
+                            <button class="btn btn-secondary">
+                                <i class="fas fa-bookmark me-2"></i>
+                                Save Tool
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
