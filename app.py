@@ -41,6 +41,14 @@ def generate_unique_filename(original_filename):
 def index():
     return app.send_static_file('index.html')
 
+@app.route('/pricing')
+def pricing():
+    return app.send_static_file('pricing.html')
+
+@app.route('/login')
+def login():
+    return app.send_static_file('login.html')
+
 @app.route('/tools/<tool_name>')
 def tool_page(tool_name):
     return app.send_static_file(f'tools/{tool_name}.html')

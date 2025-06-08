@@ -901,6 +901,241 @@ footer p {
     line-height: 1.6;
 }
 
+/* Login Page Styles */
+.login-main {
+    min-height: calc(100vh - 80px);
+    padding: var(--spacing-lg) 0;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--border-color);
+    border-radius: 1.5rem;
+    padding: 3rem 2.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+.login-card:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.login-header {
+    margin-bottom: 2.5rem;
+}
+
+.login-icon {
+    width: 4rem;
+    height: 4rem;
+    background: linear-gradient(135deg, var(--primary-black) 0%, var(--dark-gray) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: var(--primary-white);
+    font-size: 1.5rem;
+}
+
+.login-header h2 {
+    color: var(--primary-black);
+    font-weight: 700;
+    font-size: 1.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.login-header p {
+    color: var(--text-muted);
+    margin: 0;
+    font-size: 1rem;
+}
+
+.login-form {
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: var(--primary-black);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper i {
+    position: absolute;
+    left: 1rem;
+    color: var(--text-muted);
+    z-index: 10;
+}
+
+.input-wrapper .form-control {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    height: 3rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.input-wrapper .form-control:focus {
+    border-color: var(--primary-black);
+    background: var(--primary-white);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.password-toggle {
+    position: absolute;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.password-toggle:hover {
+    color: var(--primary-black);
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.form-check-label {
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.forgot-password {
+    color: var(--primary-black);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-password:hover {
+    color: var(--dark-gray);
+    text-decoration: underline;
+}
+
+.divider {
+    position: relative;
+    text-align: center;
+    margin: 2rem 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--border-color);
+    z-index: 1;
+}
+
+.divider span {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.social-login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1rem;
+    border: 1px solid var(--border-color);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: var(--radius);
+    color: var(--primary-black);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-social:hover {
+    background: var(--primary-white);
+    border-color: var(--primary-black);
+    transform: translateY(-1px);
+    color: var(--primary-black);
+}
+
+.btn-social.google i {
+    color: #db4437;
+}
+
+.btn-social.github i {
+    color: #333;
+}
+
+.signup-link {
+    margin-top: 2rem;
+}
+
+.signup-link p {
+    color: var(--text-muted);
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.signup-link a {
+    color: var(--primary-black);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link a:hover {
+    color: var(--dark-gray);
+    text-decoration: underline;
+}
+
+.signup-card {
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Utility Classes */
 .text-primary-black {
     color: var(--primary-black) !important;
